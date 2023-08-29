@@ -1,1 +1,1 @@
-# Python-Project
+This Python code defines classes Company and Employee for managing company and employee information. It allows users to input employee details, search employees by ID, name, or hours worked, and calculate/display their salaries based on an hourly rate. The program efficiently organizes and retrieves employee data while facilitating salary computation
