@@ -68,19 +68,22 @@ for _ in range(num_employees):
 for i in range(num_employees):
   Employees[i].display()
 
-n=int(input("On what basis you want to diplay information of the employees??.Enter 1 for ID. 2 for Name. 3 for Working Hours. => "))
-if n==1:
-  eid = input("Enter the Employee id to be searched ")
-  for i in range(num_employees):
-    Employees[i].searchbyeid(eid)
-elif n==2:
-  namee = input("Enter the name to be searched ")
-  for i in range(num_employees):
-    Employees[i].searchbyname(namee)
-elif n==3:
-  workhrs = float(input("Enter the working hours to be searched "))
-  for i in range(num_employees):
-    Employees[i].searchbyhrs(workhrs)
+while True :
+  n=int(input("On what basis you want to diplay information of the employees??.Enter 1 for ID. 2 for Name. 3 for Working Hours. => "))
+  if n==1:
+    eid = input("Enter the Employee id to be searched ")
+    for i in range(num_employees):
+      Employees[i].searchbyeid(eid)
+  elif n==2:
+    namee = input("Enter the name to be searched ")
+    for i in range(num_employees):
+      Employees[i].searchbyname(namee)
+  elif n==3:
+    workhrs = float(input("Enter the working hours to be searched "))
+    for i in range(num_employees):
+      Employees[i].searchbyhrs(workhrs)
+  else :
+    break
    
 
 
